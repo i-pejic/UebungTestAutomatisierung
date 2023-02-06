@@ -10,7 +10,7 @@ public class BMIAnalyzer extends PersonAnalyzer {
     }
 
     public double calcBmi(Person person) {
-        return person.getWeight() / ((person.getSize() / 10.0) * (person.getSize() / 1000.0));
+        return person.getWeight() / ((person.getSize() / 100.0) * (person.getSize() / 100.0));
     }
 
     @Override

@@ -1,11 +1,8 @@
-package org.campus02.test;
+package org.campus02;
 
-import org.campus02.Person;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class PersonTest {
 
@@ -33,5 +30,14 @@ class PersonTest {
     }
     @Test
     void setEyeColor() {
+        String newEyeColor = "green";
+        person.setEyeColor("green");
+
+        if(newEyeColor.equals("braun") || newEyeColor.equals("grün") || newEyeColor.equals("blau")) {
+            Assertions.assertEquals(newEyeColor, person.getEyeColor());
+        }
+        else {
+            Assertions.assertEquals("undefined", person.getEyeColor());
+        }
     }
 }

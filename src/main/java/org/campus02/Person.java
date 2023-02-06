@@ -22,6 +22,7 @@ public class Person {
 		this.country = country;
 		this.weight = weight;
 		this.size = size;
+		this.salary = salary;
 		setEyeColor(eyeColor);
 	}
 
@@ -86,6 +87,7 @@ public class Person {
 			case "blau":
 			case "grün":
 				this.eyeColor = eyeColor;
+				break;
 			default:
 				this.eyeColor = "undefined";
 				break;
